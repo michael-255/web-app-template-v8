@@ -1,13 +1,12 @@
-# Nuxt Minimal Starter
+# Nuxt Web App Template
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+WIP
 
 ## TODO
 
-- Install dependencies for your template project
-- Add a license
-- Update README
-- Update package.json
+- Add other packages you plan to use
+- Determine how the routing works again
+- Try using a bottom sheet for the context menu (<https://stackblitz.com/edit/github-g9bzsz?file=nuxt.config.ts>)
 
 ## Setup
 

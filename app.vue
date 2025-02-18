@@ -1,6 +1,5 @@
 <template>
   <div>
-    <NuxtRouteAnnouncer />
-    <NuxtWelcome />
+    <q-btn color="primary" label="Go Home" size="xl" />
   </div>
 </template>
