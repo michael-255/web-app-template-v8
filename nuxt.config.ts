@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   },
   devtools: { enabled: true },
   compatibilityDate: "2025-02-17",
-  modules: ["nuxt-quasar-ui"],
+  modules: ["nuxt-quasar-ui", "@pinia/nuxt"],
   quasar: {
     plugins: [],
     extras: {

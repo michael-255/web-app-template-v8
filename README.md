@@ -4,8 +4,7 @@ WIP
 
 ## TODO
 
-- Add other packages you plan to use
-- Determine how the routing works again
+- Get the `index` page working (may need some more imports)
 - Try using a bottom sheet for the context menu (<https://stackblitz.com/edit/github-g9bzsz?file=nuxt.config.ts>)
 
 ## Setup
