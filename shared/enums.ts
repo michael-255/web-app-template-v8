@@ -1,5 +1,5 @@
 /**
- * Defining in one file to reduce the likelyhood of circular dependencies.
+ * @note Defining in one file to reduce the likelyhood of circular dependencies.
  */
 
 //
@@ -11,11 +11,8 @@
  */
 export enum RouteNameEnum {
   MENU_LAYOUT = "MenuLayout",
-  PLANS_DASHBOARD = "PlansDashboard",
-  WORKOUTS_DASHBOARD = "WorkoutsDashboard",
-  EXERCISES_DASHBOARD = "ExercisesDashboard",
-  MEASUREMENTS_DASHBOARD = "MeasurementsDashboard",
-  TABLE = "Table",
+  EXAMPLES_DASHBOARD = "ExamplesDashboard",
+  TABLE = "Table", // TODO: Will I need a route for each table?
   SETTINGS = "Settings",
   ABOUT = "About",
   DONATE = "Donate",
@@ -44,23 +41,6 @@ export enum StatusEnum {
 export enum LimitEnum {
   MAX_TEXT_AREA = 300,
   MAX_TEXT_LINE = 50,
-  MAX_SETS = 30,
-  MAX_WEIGHT = 9_999,
-  MAX_REPS = 9_999,
-  MAX_RPE = 10,
-  MIN_REST_TIMER = 30, // 30 seconds
-  MAX_REST_TIMER = 900, // 15 minutes
-  MAX_DURATION_SEC = 359_999, // 99 hours 59 minutes 59 seconds
-  MAX_CALORIES_BURNED = 9_999,
-  MAX_CALORIES = 99_999,
-  MAX_NUTRITION = 9_999,
-  MAX_BODY_WEIGHT = 9_999,
-  MIN_TEMPERATURE = 60,
-  MAX_TEMPERATURE = 115,
-  MAX_BODY_MEASUREMENT = 999,
-  MIN_BLOOD_PRESSURE = 30,
-  MAX_BLOOD_PRESSURE = 300,
-  MAX_CHOLESTEROL = 999,
 }
 
 export enum DurationEnum {
@@ -121,86 +101,4 @@ export enum LogLevelEnum {
   INFO = "INFO",
   WARN = "WARN",
   ERROR = "ERROR",
-}
-
-//
-// Measurements
-//
-
-export enum MeasurementFieldEnum {
-  // Diet
-  CALORIES = "Calories",
-  CARBS = "Carbs",
-  FAT = "Fat",
-  PROTEIN = "Protein",
-  // Weight
-  BODY_WEIGHT = "Body Weight",
-  BODY_FAT = "Body Fat", // %
-  // Health
-  TEMPERATURE = "Temperature",
-  BLOOD_PRESSURE = "Blood Pressure", // Systolic/Diastolic
-  BLOOD_OXYGEN = "Blood Oxygen",
-  // Body
-  NECK = "Neck",
-  SHOULDERS = "Shoulders",
-  CHEST = "Chest",
-  WAIST = "Waist",
-  BICEPS = "Biceps",
-  FOREARMS = "Forearms",
-  THIGHS = "Thighs",
-  CALVES = "Calves",
-  // Lab Work
-  CHOLESTEROL = "Cholesterol", // mg/dL
-  CHOLESTEROL_HDL = "Cholesterol HDL", // mg/dL
-  CHOLESTEROL_LDL = "Cholesterol LDL", // mg/dL
-  HEMOGLOBIN_A1C = "Hemoglobin A1C", // %
-}
-
-//
-// Plans
-//
-
-/**
- * The only valid IDs for plans in the application.
- */
-export enum PlanIdEnum {
-  // Specific weekday recurring
-  MONDAY = "Monday",
-  TUESDAY = "Tuesday",
-  WEDNESDAY = "Wednesday",
-  THURSDAY = "Thursday",
-  FRIDAY = "Friday",
-  SATURDAY = "Saturday",
-  SUNDAY = "Sunday",
-  // Specific month recurring
-  JANUARY = "January",
-  FEBRUARY = "February",
-  MARCH = "March",
-  APRIL = "April",
-  MAY = "May",
-  JUNE = "June",
-  JULY = "July",
-  AUGUST = "August",
-  SEPTEMBER = "September",
-  OCTOBER = "October",
-  NOVEMBER = "November",
-  DECEMBER = "December",
-  // Long term recurring
-  MONTHLY = "Monthly",
-  YEARLY = "Yearly",
-}
-
-//
-// Exercises
-//
-
-/**
- * Used to determine the type of inputs available for an exercise.
- */
-export enum ExerciseInputEnum {
-  CHECKLIST = "Checklist", // Check boxes, all optional
-  CARDIO = "Cardio Exercise", // Duration, Calories, RPE
-  WEIGHT = "Weight Exercise", // Reps, Weight, RPE
-  SIDED_WEIGHT = "Sided Weight Exercise", // Reps (R/L), Weight (R/L), RPE (R/L)
-  CLIMBING_SESSION = "Climbing Session",
 }

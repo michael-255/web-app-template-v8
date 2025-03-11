@@ -5,6 +5,7 @@ WIP
 ## TODO
 
 - Get the `index` page working (may need some more imports)
+- GitHub pages deploy with actions needs to be setup
 - Try using a bottom sheet for the context menu (<https://stackblitz.com/edit/github-g9bzsz?file=nuxt.config.ts>)
 
 ## Setup

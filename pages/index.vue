@@ -1,18 +1,18 @@
 <script setup lang="ts">
-import { useQuasar } from "quasar";
-import { onMounted, onUnmounted } from "vue";
-import useLogger from "~/composables/useLogger";
-import { DB } from "~/shared/db";
+import useLogger from "@/composables/useLogger";
+import { DB } from "@/shared/db";
 import {
   DurationEnum,
   DurationMSEnum,
   SettingIdEnum,
   TableEnum,
-} from "~/shared/enums";
-import { errorIcon } from "~/shared/icons";
-import type { SettingType } from "~/shared/types/types";
-import { initializeSettings, liveTable } from "~/shared/utils/db-helpers";
-import { useSettingsStore } from "~/stores/settings";
+} from "@/shared/enums";
+import { errorIcon } from "@/shared/icons";
+import type { SettingType } from "@/shared/types/types";
+import { initializeSettings, liveTable } from "@/shared/utils/db-helpers";
+import { useSettingsStore } from "@/stores/settings";
+import { useQuasar } from "quasar";
+import { onMounted, onUnmounted } from "vue";
 
 const notify = useQuasar().notify;
 const { log } = useLogger();

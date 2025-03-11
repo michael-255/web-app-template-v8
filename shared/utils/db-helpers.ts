@@ -92,7 +92,7 @@ export function liveTable<T>(
 }
 
 /**
- * Initializes the Settings table with defaults or the previously stored values.
+ * Initializes the Settings table with defaults or the previously stored values from the database.
  */
 export async function initializeSettings(db: Dexie = DB) {
   const defaultSettings: {

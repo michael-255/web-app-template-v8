@@ -1,10 +1,10 @@
 import { appName } from "@/shared/constants";
+import { DB } from "@/shared/db";
 import { LogLevelEnum, TableEnum } from "@/shared/enums";
 import { debugIcon, errorIcon, infoIcon, warnIcon } from "@/shared/icons";
+import { Log } from "@/shared/models/Log";
 import { useSettingsStore } from "@/stores/settings";
 import { colors, useQuasar } from "quasar";
-import { DB } from "../shared/db";
-import { Log } from "../shared/models/Log";
 import type { LogDetailsType } from "../shared/types/types";
 
 /**
